@@ -56,8 +56,8 @@ const { signToken } = require('../utils/auth');
         },
 
         removeBook: async (parent, { bookId }, context) => {
-            const {bookId} = bookId;
-            console.log(temp);
+            // const {bookId} = bookId;
+            // console.log(temp);
             if(context.user) {
                 const updateUser = await User.findOneAndUpdate(
                     {_id: context.user._id},
